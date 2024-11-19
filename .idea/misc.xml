@@ -9,10 +9,15 @@
         <option value="$PROJECT_DIR$/Expedition/pom.xml" />
         <option value="$PROJECT_DIR$/Getway-Service/pom.xml" />
         <option value="$PROJECT_DIR$/Gateway-Service/pom.xml" />
+        <option value="$PROJECT_DIR$/Ms-Utilisateur/pom.xml" />
+        <option value="$PROJECT_DIR$/Ms-Commande/pom.xml" />
+        <option value="$PROJECT_DIR$/Eureka-Discovery/pom.xml" />
+        <option value="$PROJECT_DIR$/ConfigServer/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
+        <option value="$PROJECT_DIR$/Commande/pom.xml" />
         <option value="$PROJECT_DIR$/Expedition/pom.xml" />
       </set>
     </option>

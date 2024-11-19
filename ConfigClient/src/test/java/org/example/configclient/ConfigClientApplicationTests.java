@@ -1,10 +1,10 @@
-package org.example.gatewayservice;
+package org.example.configclient;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class GatewayServiceApplicationTests {
+class ConfigClientApplicationTests {
 
 	@Test
 	void contextLoads() {
