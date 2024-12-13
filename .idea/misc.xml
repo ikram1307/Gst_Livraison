@@ -13,12 +13,22 @@
         <option value="$PROJECT_DIR$/Ms-Commande/pom.xml" />
         <option value="$PROJECT_DIR$/Eureka-Discovery/pom.xml" />
         <option value="$PROJECT_DIR$/ConfigServer/pom.xml" />
+        <option value="$PROJECT_DIR$/Ms-Paiement/pom.xml" />
+        <option value="$PROJECT_DIR$/Ms-Colis/pom.xml" />
+        <option value="$PROJECT_DIR$/ActiveMQConsumer/pom.xml" />
+        <option value="$PROJECT_DIR$/ActiveMQProducer/pom.xml" />
+        <option value="$PROJECT_DIR$/ActiveMQproducer/pom.xml" />
+        <option value="$PROJECT_DIR$/Producer/pom.xml" />
+        <option value="$PROJECT_DIR$/Ms-Notification/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
+        <option value="$PROJECT_DIR$/ActiveMQProducer/pom.xml" />
+        <option value="$PROJECT_DIR$/ActiveMQproducer/pom.xml" />
         <option value="$PROJECT_DIR$/Commande/pom.xml" />
         <option value="$PROJECT_DIR$/Expedition/pom.xml" />
+        <option value="$PROJECT_DIR$/Ms-Notification/pom.xml" />
       </set>
     </option>
   </component>
