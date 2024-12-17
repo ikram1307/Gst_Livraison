@@ -4,7 +4,6 @@ import org.example.mspaiement.Entity.Paiement;
 import org.example.mspaiement.Repository.PaiementRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 import java.util.List;
 import java.util.Optional;
 
@@ -33,4 +32,5 @@ public class PaiementServiceImp implements PaiementService {
     public void deletePaiement(Long id) {
         paiementRepository.deleteById(id);
     }
+
 }
