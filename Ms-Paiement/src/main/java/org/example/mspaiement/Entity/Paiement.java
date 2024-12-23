@@ -1,5 +1,6 @@
 package org.example.mspaiement.Entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -27,5 +28,7 @@ public class Paiement {
     private Long commandeId;
 
     @OneToOne(mappedBy = "paiement", cascade = CascadeType.ALL) // Relation One-to-One
+    @JsonIgnore
+
     private Facture facture;
 }

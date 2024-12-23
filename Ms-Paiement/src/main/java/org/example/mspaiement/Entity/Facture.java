@@ -1,5 +1,6 @@
 package org.example.mspaiement.Entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -23,5 +24,7 @@ public class Facture {
 
     @OneToOne
     @JoinColumn(name = "paiement_id", referencedColumnName = "id")
+    @JsonIgnore
+
     private Paiement paiement;
 }

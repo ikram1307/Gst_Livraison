@@ -1,17 +1,21 @@
-package org.example.mscommande.Client;
+package org.example.mspaiement.Client;
 
-import org.example.mscommande.Entity.Commande;
+import org.example.mspaiement.DTO.Commande;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
-@FeignClient(name = "commande-service", url = "http://localhost:8091/commande") // Replace with Commande Service's base URL or service discovery name
-public interface CommandeFeignClient {
+import java.util.List;
 
-    @GetMapping("/{id}")
-    Commande getCommandeById(@PathVariable("id") Long id);
+@FeignClient(name = "Ms-Commande") // Replace with Commande Service's base URL or service discovery name
+public interface CommandeFeignClient {
+    @GetMapping("/paiements")
+    List<Commande> getAllCommandes();
+
+    @GetMapping("/paiements/{id}")
+    Commande getCommadeById(@PathVariable Long id);
 
     @PutMapping("/{id}")
     void updateCommandeStatus(@PathVariable("id") Long id, @RequestBody Commande commande);

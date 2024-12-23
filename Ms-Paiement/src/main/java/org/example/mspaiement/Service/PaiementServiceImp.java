@@ -1,5 +1,7 @@
 package org.example.mspaiement.Service;
 
+import org.example.mspaiement.Client.CommandeFeignClient;
+import org.example.mspaiement.DTO.Commande;
 import org.example.mspaiement.Entity.Paiement;
 import org.example.mspaiement.Repository.PaiementRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -32,5 +34,16 @@ public class PaiementServiceImp implements PaiementService {
     public void deletePaiement(Long id) {
         paiementRepository.deleteById(id);
     }
+    @Autowired
+    private CommandeFeignClient commandeFeignClient;
 
+    public Commande getCommandeDetails(Long commandeId) {
+        return commandeFeignClient.getCommadeById(commandeId); // Call Microservice B
+    }
+
+    public void updateCommandeAfterPaiement(Long commandeId, String newStatus) {
+        Commande commande = commandeFeignClient.getCommadeById(commandeId);
+        commande.setStatus(newStatus);
+        commandeFeignClient.updateCommandeStatus(commandeId, commande); // Update in Microservice B
+    }
 }
